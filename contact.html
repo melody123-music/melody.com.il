@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melody - יצירת קשר</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Melody לוגו" class="logo" />
+      <div class="brand-title">
+        <h1>MELODY</h1>
+        <span class="subtitle">הקלטות אולפן ומוזיקה</span>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">דף הבית</a>
+      <a href="about.html">אודות</a>
+      <a href="projects.html">פרויקטים</a>
+      <a href="equipment.html">השכרת ציוד להגברה</a>
+      <a href="schedule.html">לוח זמנים</a>
+      <a href="contact.html" class="active">יצירת קשר</a>
+      <a href="#musician" class="musician-link">קלידן וזמר לאירועים</a>
+    </nav>
+  </header>
+  <main>
+    <section class="contact-section">
+      <h2>צור קשר</h2>
+      <form class="contact-form" action="https://formspree.io/f/mzzvrwnv" method="POST">
+        <input type="text" name="name" placeholder="שם מלא" required />
+        <input type="email" name="email" placeholder="אימייל" required />
+        <input type="tel" name="phone" placeholder="טלפון" required />
+        <textarea name="message" placeholder="ההודעה שלך" required></textarea>
+        <button type="submit" class="btn-main">שלח הודעה</button>
+      </form>
+      <div class="contact-details">
+        <div>טלפון: <a href="tel:0527639202">058-7639202</a> | <a href="tel:0527673518">052-7673518</a></div>
+        <div>אימייל: <a href="mailto:melodyulpan@gmail.com">melodyulpan@gmail.com</a></div>
+        <div>
+          <a href="https://wa.me/972587639202" target="_blank" class="btn-main" style="display:inline-block;margin-top:1rem;">שלח הודעה בוואטסאפ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-phones">0587639202 | 0527673518</div>
+    <div>כל הזכויות שמורות &copy; Melody 2024</div>
+  </footer>
+</body>
+</html> 

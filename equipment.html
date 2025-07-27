@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melody - השכרת ציוד להגברה</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Melody לוגו" class="logo" />
+      <div class="brand-title">
+        <h1>MELODY</h1>
+        <span class="subtitle">הקלטות אולפן ומוזיקה</span>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">דף הבית</a>
+      <a href="about.html">אודות</a>
+      <a href="projects.html">פרויקטים</a>
+      <a href="equipment.html" class="active">השכרת ציוד להגברה</a>
+      <a href="schedule.html">לוח זמנים</a>
+      <a href="contact.html">יצירת קשר</a>
+      <a href="#musician" class="musician-link">קלידן וזמר לאירועים</a>
+    </nav>
+  </header>
+  <main>
+    <section class="equipment-section">
+      <h2>השכרת ציוד להגברה</h2>
+      <p class="equipment-intro">
+        ציוד מקצועי ואיכותי לאירועים, הופעות ופרויקטים מוזיקליים.<br>
+        צוות טכני מקצועי לליווי והתקנה במקום.
+      </p>
+      
+      <div class="equipment-contact">
+        <h3>ליצירת קשר ישיר</h3>
+        <p>ניתן ליצור קשר ישיר במספר:</p>
+        <a href="tel:0587639202">058-7639202</a>
+      </div>
+
+      <div class="equipment-categories">
+        <div class="category-card">
+          <h3>מערכות הגברה</h3>
+          <div class="equipment-item">
+            <span>שני רמקולים - רמקול RCF 715 רמקול איכותי עם עוצמה חזקה וצליל נקי לאוזן<br>מוניטור  כולל מקרופנים כולל מיקסר איכותי וכבלים  כולל הרכבה ופירוק</span>
+            <span class="price">₪450</span>
+          </div>
+          <div class="equipment-item">
+            <span>רמקול אחד, מיקסר, מיקרופון וכבלים</span>
+            <span class="price">₪350</span>
+          </div>
+          <div class="equipment-item">
+            <span style="color:#b84e9a;font-size:0.95em;">*מחיר לא כולל חגים</span>
+          </div>
+        </div>
+      </div>
+      <div class="rental-form-section">
+        <h3>הזמנת ציוד</h3>
+        <form class="rental-form" action="https://formspree.io/f/xeozgwjl" method="POST">
+          <input type="text" name="name" placeholder="שם מלא" required />
+          <input type="email" name="email" placeholder="אימייל" required />
+          <input type="tel" name="phone" placeholder="טלפון" required />
+          <input type="date" name="date" placeholder="תאריך השכרה" required />
+          <input type="time" name="time" placeholder="שעת איסוף" required />
+          <textarea name="message" placeholder="פרטי הציוד הנדרש, כמות, הערות נוספות" required></textarea>
+          <button type="submit" class="btn-main">שלח הזמנה</button>
+        </form>
+      </div>
+    </section>
+    <section id="musician" class="musician-section" style="margin-top:2.5rem; background: #f7f5fa; border-radius: 24px; box-shadow: 0 4px 24px rgba(109,37,103,0.07); padding: 2rem; max-width: 700px; margin-right:auto; margin-left:auto;">
+      <div style="display:flex;align-items:center;gap:1.5rem;">
+        <img src="IMG-20250220-WA0090.jpg" alt="קלידן וזמר" style="width:70px;height:70px;border-radius:12px;object-fit:cover;box-shadow:0 2px 8px #ccc;" />
+        <div>
+          <h3 style="margin:0 0 0.5rem 0;color:#6d2567;">קלידן וזמר לאירועים – מוזיקה עם נשמה</h3>
+          <p style="margin:0;font-size:1.1em;">
+            מחפשים ליווי מוזיקלי מרגש, איכותי ומוקפד לאירוע שלכם?<br>
+            שמי אלקנה ברויער<br>
+            קלידן וזמר עם ניסיון .  לאירועים מיוחדים שלכם – עם מוזיקה מותאמת אישית, מגוון סגנונות, ושירה שמרגשת את הקהל ומרוממת את האווירה.<br>
+            נגינה חיה ועוצמתית<br>
+            התאמה מושלמת לסגנון האירוע והקהל<br>
+            אפשרות לליווי חופה מרגש במיוחד<br>
+              רוחנית, שמחה ומרוממת ליצירת קשר 0587639202<br>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-phones">0587639202 | 0527673518</div>
+    <div>כל הזכויות שמורות &copy; Melody 2024</div>
+  </footer>
+  <script>
+    document.querySelector('.rental-form').onsubmit = function(e) {
+      e.preventDefault();
+      if (confirm('שימו לב: הודעה זו אינה מהווה קביעת תור - ניצור עמכם קשר.\nליצירת קשר: 0587639202\nתודה רבה!')) {
+        this.submit();
+      }
+    };
+  </script>
+</body>
+</html> 

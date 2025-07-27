@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melody - לוח זמנים</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Melody לוגו" class="logo" />
+      <div class="brand-title">
+        <h1>MELODY</h1>
+        <span class="subtitle">הקלטות אולפן ומוזיקה</span>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">דף הבית</a>
+      <a href="about.html">אודות</a>
+      <a href="projects.html">פרויקטים</a>
+      <a href="equipment.html">השכרת ציוד</a>
+      <a href="schedule.html" class="active">לוח זמנים</a>
+      <a href="contact.html">יצירת קשר</a>
+    </nav>
+  </header>
+  <main>
+    <section class="schedule-section">
+      <h2>קביעת תור</h2>
+      <form class="schedule-form" action="https://formspree.io/f/mzzvrwnv" method="POST">
+        <input type="text" name="name" placeholder="שם מלא" required />
+        <input type="email" name="email" placeholder="אימייל" required />
+        <input type="tel" name="phone" placeholder="טלפון" required />
+        <input type="date" name="date" placeholder="תאריך" required />
+        <input type="time" name="time" placeholder="שעה" required />
+        <textarea name="message" placeholder="פרטי ההזמנה (סוג שירות, הערות נוספות)" required></textarea>
+        <button type="submit" class="btn-main">שלח הזמנה</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-phones">0587639202 | 0527673518</div>
+    <div>כל הזכויות שמורות &copy; Melody 2024</div>
+  </footer>
+  <script>
+    document.querySelector('.schedule-form').onsubmit = function(e) {
+      e.preventDefault();
+      if (confirm('שימו לב: הודעה זו אינה מהווה קביעת תור - ניצור עמכם קשר.\nיצירת קשר: 0527673518, 0527639202')) {
+        this.submit();
+      }
+    };
+  </script>
+</body>
+</html> 
